@@ -80,68 +80,17 @@
 
 	  // SUBNETS
 
-    variable "public_subnet_01_display_name" {
-      default = "interco_subnet_public"
-      description = "DMZ Public Subnet Display name"
-    }
-    variable "public_subnet_01_cidr_block" {
-      default = "172.19.0.0/28"
-      description = "DMZ Cidr block"
-    }
-    variable "public_subnet_01_dns_label" {
-      default = "interco"
-      description = "DNS label for resources in this Subnet"
-    }
 # -----------------------------------------------
-    variable "private_subnet_01_display_name" {
-      default = "multi-prod_subnet_private"
-      description = "Private Subnet #1 Display name"
+    variable "private_subnet_06_display_name" {
+      default = "saas-dev_subnet_private"
+      description = "Private Subnet #6 Display name"
     }
-    variable "private_subnet_01_cidr_block" {
-      default = "172.19.0.24/29"
-      description = "Private Subnet #1 Cidr block"
-          }
-    variable "private_subnet_01_dns_label" {
-      default = "mulltiprod"
-      description = "DNS label for resources in this Subnet"
+    variable "private_subnet_06_cidr_block" {
+      default = "172.19.0.80/28"
+      description = "Private Subnet #6 Cidr block"
     }
-# -----------------------------------------------
-    variable "private_subnet_02_display_name" {
-      default = "multi-rect_subnet_private"
-      description = "Private Subnet #2 Display name"
-    }
-    variable "private_subnet_02_cidr_block" {
-      default = "172.19.0.32/29"
-      description = "Private Subnet #2 Cidr block"
-    }
-    variable "private_subnet_02_dns_label" {
-      default = "mulltirect"
-      description = "DNS label for resources in this Subnet"
-    }
-# -----------------------------------------------
-    variable "private_subnet_03_display_name" {
-      default = "multi-dev_subnet_private"
-      description = "Private Subnet #3 Display name"
-    }
-    variable "private_subnet_03_cidr_block" {
-      default = "172.19.0.40/29"
-      description = "Private Subnet #3 Cidr block"
-    }
-    variable "private_subnet_03_dns_label" {
-      default = "mulltidev"
-      description = "DNS label for resources in this Subnet"
-    }
-# -----------------------------------------------
-    variable "private_subnet_04_display_name" {
-      default = "saas-prod_subnet_private"
-      description = "Private Subnet #4 Display name"
-    }
-    variable "private_subnet_04_cidr_block" {
-      default = "172.19.0.48/28"
-      description = "Private Subnet #4 Cidr block"
-    }
-    variable "private_subnet_04_dns_label" {
-      default = "saasprod"
+    variable "private_subnet_06_dns_label" {
+      default = "saasdev"
       description = "DNS label for resources in this Subnet"
     }
 # -----------------------------------------------
@@ -158,21 +107,71 @@
       description = "DNS label for resources in this Subnet"
     }
 # -----------------------------------------------
-    variable "private_subnet_06_display_name" {
-      default = "saas-dev_subnet_private"
-      description = "Private Subnet #6 Display name"
+    variable "private_subnet_04_display_name" {
+      default = "saas-prod_subnet_private"
+      description = "Private Subnet #4 Display name"
     }
-    variable "private_subnet_06_cidr_block" {
-      default = "172.19.0.80/28"
-      description = "Private Subnet #6 Cidr block"
+    variable "private_subnet_04_cidr_block" {
+      default = "172.19.0.48/28"
+      description = "Private Subnet #4 Cidr block"
     }
-    variable "private_subnet_06_dns_label" {
-      default = "saasdev"
+    variable "private_subnet_04_dns_label" {
+      default = "saasprod"
       description = "DNS label for resources in this Subnet"
     }
-
-# ==============================================
-
+# -----------------------------------------------
+    variable "private_subnet_03_display_name" {
+      default = "multi-dev_subnet_private"
+      description = "Private Subnet #3 Display name"
+    }
+    variable "private_subnet_03_cidr_block" {
+      default = "172.19.0.40/29"
+      description = "Private Subnet #3 Cidr block"
+    }
+    variable "private_subnet_03_dns_label" {
+      default = "mulltidev"
+      description = "DNS label for resources in this Subnet"
+    }
+# -----------------------------------------------
+    variable "private_subnet_02_display_name" {
+      default = "multi-rect_subnet_private"
+      description = "Private Subnet #2 Display name"
+    }
+    variable "private_subnet_02_cidr_block" {
+      default = "172.19.0.32/29"
+      description = "Private Subnet #2 Cidr block"
+    }
+    variable "private_subnet_02_dns_label" {
+      default = "mulltirect"
+      description = "DNS label for resources in this Subnet"
+    }
+# -----------------------------------------------
+    variable "private_subnet_01_display_name" {
+      default = "multi-prod_subnet_private"
+      description = "Private Subnet #1 Display name"
+    }
+    variable "private_subnet_01_cidr_block" {
+      default = "172.19.0.24/29"
+      description = "Private Subnet #1 Cidr block"
+          }
+    variable "private_subnet_01_dns_label" {
+      default = "mulltiprod"
+      description = "DNS label for resources in this Subnet"
+    }
+# -----------------------------------------------
+    variable "public_subnet_01_display_name" {
+      default = "interco_subnet_public"
+      description = "DMZ Public Subnet Display name"
+    }
+    variable "public_subnet_01_cidr_block" {
+      default = "172.19.0.0/28"
+      description = "DMZ Cidr block"
+    }
+    variable "public_subnet_01_dns_label" {
+      default = "interco"
+      description = "DNS label for resources in this Subnet"
+    }
+# -----------------------------------------------
     #GW
     variable "igw_01_display_name" {
       default = "igw_01"
