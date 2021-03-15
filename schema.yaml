@@ -1,0 +1,116 @@
+# Copyright (c) 2020, Oracle and/or its affiliates. All rights reserved.
+# Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
+
+title: "Create Full Stack Network Infrastructure including default route table, DHCP options and subnets"
+stackDescription: "This stack will deploy the network infrastructure for a multi tier project"
+schemaVersion: 1.0.0
+version: "20210315"
+locale: "en"
+
+variableGroups:
+- title: "Global Variables"
+  visible: true
+  variables:
+  - compartment_ocid
+  - region
+
+- title: "Network Configuration"
+  visible: true  
+  variables:
+  - vcn_01_display_name
+  - vcn_01_cidr_block
+  - public_subnet_01_display_name
+  - public_subnet_01_cidr_block
+  - private_subnet_01_display_name
+  - private_subnet_01_cidr_block
+  - private_subnet_02_display_name
+  - private_subnet_02_cidr_block
+  - private_subnet_03_display_name
+  - private_subnet_03_cidr_block
+  - private_subnet_04_display_name
+  - private_subnet_04_cidr_block
+  - private_subnet_05_display_name
+  - private_subnet_05_cidr_block
+  - private_subnet_06_display_name
+  - private_subnet_06_cidr_block
+
+- title: "IPSEC Configuration"
+  visible: true  
+  variables:
+  - drg_01_display_name
+  - cpe_01_display_name
+  - cpe_01_ip_address
+  - my_ipsec_display_name
+  - display_name_tunnel1
+  - routing_method1
+  - sharedSecret1
+  - ike_version1
+  - display_name_tunnel2
+  - routing_method2
+  - sharedSecret2
+  - ike_version2
+
+
+- title: "Resource naming"
+  visible: true  
+  variables:
+  - igw_01_display_name
+  - ngw_01_display_name
+  - sgw_01_display_name
+  - public_route_table_display_name
+  - private_route_table_display_name
+  - sl_00_display_name
+  - sl_01_display_name
+  - sl_02_display_name
+  - sl_03_display_name
+  - sl_04_display_name
+  - sl_05_display_name
+  - sl_06_display_name
+  - nsg_01_display_name
+
+- title: "Optional configuration"
+  visible: true  
+  variables:
+
+variables:
+
+  compartment_ocid:
+    type: oci:identity:compartment:id
+    # type: string
+    required: true
+    title: "Select your compartment"
+    description: "Compartment where you want to deploy the resources defined by this stack"
+
+  region:
+    type: oci:identity:region:name
+    required: true
+    title: "Select your region"
+    description: "Region where you want to deploy the resources defined by this stack"
+
+  vcn_01_display_name:
+    type: string
+    required: true
+    title: "Virtual Network Display Name"
+    description: "Display name of the Virtual Network"
+
+  vcn_01_cidr_block:
+    type: string    
+    #default: "10.32.0.0/24"
+    required: true
+    pattern: "^(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9]).(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9]).(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9]).(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\\/(3[0-2]|[1-2]?[0-9])$"
+    title: "VCN CIDR"
+    description: "A single, contiguous IPv4 CIDR block of your choice for the VCN"
+
+  vcn_01_dns_label:
+    type: string
+    required: true
+    pattern: "^[a-zA-Z][a-zA-Z0-9]{0,14}$"
+    title: "VCN DNS Label"
+    description: "A DNS label for the VCN, used in conjunction with the VNIC's hostname and subnet's DNS label to form a fully qualified domain name (FQDN) for each VNIC within this subnet"
+
+  public_subnet_01_dns_label:
+    type: string
+    required: true
+    pattern: "^[a-zA-Z][a-zA-Z0-9]{0,14}$"
+    title: "Subnet DNS Label"
+    description: "A DNS label for the subnet, used in conjunction with the VNIC's hostname and subnet's DNS label to form a fully qualified domain name (FQDN) for each VNIC within this subnet"
