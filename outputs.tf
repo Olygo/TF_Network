@@ -1,4 +1,6 @@
 
-output "vcn_id_spoke01" {
-  value = oci_core_vcn.spoke01.id
+output "vcn_01" {
+  value = oci_core_vcn.vcn_01.id
 }
+
+
