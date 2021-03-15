@@ -3,8 +3,8 @@ resource "oci_core_cpe" "my_cpe" {
   display_name        = var.cpe_01_display_name
   ip_address          = var.cpe_01_ip_address
   
-  # FortinetFortigate 6+
-  cpe_device_shape_id = "15addf76-6ecd-4a76-a1e7-527edd848471"
+  # FortinetFortigate 6+ => ID for FRANKFURT only
+  # cpe_device_shape_id = "15addf76-6ecd-4a76-a1e7-527edd848471"
 
   # Cisco/ASA
   #cpe_device_shape_id = "a2be6b04-4ef2-4fa4-8789-56cfc1f022ce"
