@@ -35,7 +35,7 @@
 
 			tcp_options {
 				destination_port_range {
-					max = 1521
+					max = 1522
 					min = 1521
 				}
 			}

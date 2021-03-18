@@ -35,7 +35,7 @@
 
 // allow inbound SSH traffic from internet
 		  ingress_security_rules {
-		  description = "Allow SQLNET (ATP DBLINK) to Bastion from internet network"
+		  description = "Allow SQLNET (DBCS) to Bastion from internet network"
 		  protocol  = "6"
 		  source    = "0.0.0.0/0"
 		  stateless = false
@@ -44,6 +44,17 @@
               min = 1521
             }
           }		
+
+		  ingress_security_rules {
+		  description = "Allow SQLNET (ATP DBLINK) to Bastion from internet network"
+		  protocol  = "6"
+		  source    = "0.0.0.0/0"
+		  stateless = false
+		  tcp_options {
+              max = 1522
+              min = 1522
+            }
+          }	
 
 		  // allow inbound SSH traffic from on-prem
 		  ingress_security_rules {
