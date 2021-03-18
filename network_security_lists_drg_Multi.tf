@@ -48,7 +48,7 @@
 		  source    = var.on-premise_01_cidr_block
 		  stateless = false
 		  tcp_options {
-              max = 1521
+              max = 1522
               min = 1521
             }
           }		  
@@ -59,7 +59,7 @@
 		  source    = var.on-premise_02_cidr_block
 		  stateless = false
 		  tcp_options {
-              max = 1521
+              max = 1522
               min = 1521
             }
           }	
@@ -70,7 +70,7 @@
 		  source    = var.on-premise_03_cidr_block
 		  stateless = false
 		  tcp_options {
-              max = 1521
+              max = 1522
               min = 1521
             }
           }	
@@ -156,7 +156,7 @@
 		  source    = var.on-premise_01_cidr_block
 		  stateless = false
 		  tcp_options {
-              max = 1521
+              max = 1522
               min = 1521
             }
           }		  
@@ -167,7 +167,7 @@
 		  source    = var.on-premise_02_cidr_block
 		  stateless = false
 		  tcp_options {
-              max = 1521
+              max = 1522
               min = 1521
             }
           }	
@@ -178,7 +178,7 @@
 		  source    = var.on-premise_03_cidr_block
 		  stateless = false
 		  tcp_options {
-              max = 1521
+              max = 1522
               min = 1521
             }
           }	
@@ -265,7 +265,7 @@
 		  source    = var.on-premise_01_cidr_block
 		  stateless = false
 		  tcp_options {
-              max = 1521
+              max = 1522
               min = 1521
             }
           }		  
@@ -276,7 +276,7 @@
 		  source    = var.on-premise_02_cidr_block
 		  stateless = false
 		  tcp_options {
-              max = 1521
+              max = 1522
               min = 1521
             }
           }	
@@ -287,7 +287,7 @@
 		  source    = var.on-premise_03_cidr_block
 		  stateless = false
 		  tcp_options {
-              max = 1521
+              max = 1522
               min = 1521
             }
           }	
