@@ -86,7 +86,7 @@
       description = "Private Subnet #6 Display name"
     }
     variable "private_subnet_06_cidr_block" {
-      default = "172.19.0.80/28"
+      default = "172.19.0.240/29"
       description = "Private Subnet #6 Cidr block"
     }
     variable "private_subnet_06_dns_label" {
@@ -99,7 +99,7 @@
       description = "Private Subnet #5 Display name"
     }
     variable "private_subnet_05_cidr_block" {
-      default = "172.19.0.64/28"
+      default = "172.19.0.232/29"
       description = "Private Subnet #5 Cidr block"
     }
     variable "private_subnet_05_dns_label" {
@@ -112,7 +112,7 @@
       description = "Private Subnet #4 Display name"
     }
     variable "private_subnet_04_cidr_block" {
-      default = "172.19.0.48/28"
+      default = "172.19.0.224/29"
       description = "Private Subnet #4 Cidr block"
     }
     variable "private_subnet_04_dns_label" {
@@ -125,7 +125,7 @@
       description = "Private Subnet #3 Display name"
     }
     variable "private_subnet_03_cidr_block" {
-      default = "172.19.0.40/29"
+      default = "172.19.0.48/28"
       description = "Private Subnet #3 Cidr block"
     }
     variable "private_subnet_03_dns_label" {
@@ -138,7 +138,7 @@
       description = "Private Subnet #2 Display name"
     }
     variable "private_subnet_02_cidr_block" {
-      default = "172.19.0.32/29"
+      default = "172.19.0.32/28"
       description = "Private Subnet #2 Cidr block"
     }
     variable "private_subnet_02_dns_label" {
@@ -151,7 +151,7 @@
       description = "Private Subnet #1 Display name"
     }
     variable "private_subnet_01_cidr_block" {
-      default = "172.19.0.24/29"
+      default = "172.19.0.16/28"
       description = "Private Subnet #1 Cidr block"
           }
     variable "private_subnet_01_dns_label" {
