@@ -2,7 +2,6 @@
 ## All rights reserved. The Universal Permissive License (UPL), Version 1.0 as shown at http://oss.oracle.com/licenses/upl
 
 ## Variables
-	  ### Main variables
 
     variable "region" {
       description = "Region where you want to deploy the resources defined by this stack"
