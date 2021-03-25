@@ -67,7 +67,7 @@
       description = "Display name of your Virtual Cloud Network"
     }
     variable "vcn_01_cidr_block" {
-      default = "172.19.0.0/24"
+      default = "172.20.0.0/24"
       description = "Cidr block for your VCN"
     }
     variable "vcn_01_dns_label" {
